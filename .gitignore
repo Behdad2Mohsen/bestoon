@@ -3,3 +3,4 @@
 __pycache__/
 *.sqlite3
 bestoon/__pycache__/settings.cpython-36.pyc
+*.pyc
