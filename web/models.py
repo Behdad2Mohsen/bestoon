@@ -20,3 +20,11 @@ class Income(models.Model):
 
     def __str__(self):
         return "{} - {} Toman".format(self.text, self.amount)
+
+
+class Token(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    token = models.CharField(max_length=48)
+
+    def __str__(self):
+        return "{}_token".format(self.user)
